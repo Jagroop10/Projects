@@ -1,0 +1,118 @@
+# Project Information
+
+- **Main Author:** Jagroop10 
+
+## Assumptions ##
+ As I was designing my outlier application in Java, I made a conscious decision to keep everything on a single dropdown menu. I felt that this would provide a more streamlined user interface and make it easier for users to access the various sections and features of the application. By having everything in one place, users could quickly find what they need without having to navigate through multiple screens or menus.
+
+To further enhance usability, I also incorporated a search function into my application. I recognized that with multiple sections, it could become difficult for users to find specific section/subsection or features. By including a search function, users can simply enter the name of the section to quickly locate the section they need. This feature can save users time and effort, while also making the application more user-friendly.
+
+Another important design choice I made was to allow for three levels of subsections in the outliner. I found that this provided a good balance between granularity and simplicity, allowing users to break down complex tasks into smaller, more manageable subtasks. This also made the application more flexible, as it could handle a wide range of tasks and use cases.
+
+Overall, my design choices were focused on improving usability and user experience. I wanted to create an application that was easy to use, intuitive, and flexible enough to meet the needs of a diverse range of users.
+
+#UML Diagram
+[This was done in the Mermaid Live Editor](https://mermaid.live/) 
+
+
+```mermaid
+classDiagram
+Outliner "1" o-- "0..*" Section
+Outliner "1" o-- "0..*" Subsection 
+Section "1" o-- "0..*" Subsection 
+
+class Outliner {
+    - title: String  
+    - description: String
+    - isComplete: boolean 
+    - sections: List<Section> 
+    - tags: List<String> 
+
+    + getTitle(): String 
+    + setTitle(title: String): void 
+    + getDescription(): String 
+    + setDescription(description: String): void 
+    + isComplete(): boolean 
+    + setComplete(isComplete: boolean): void 
+    + getSections(): List<Section> 
+    + setSections(sections: List<Section>): void 
+    + getInstance(title: String, description: String): Outliner 
+    + getInstance(): Outliner 
+    + createSection(sectionName: String, targetDate: Date): void 
+    + editSection(sectionTitle: String, newTitle: String): void 
+    + deleteSection(sectionTitle: String): boolean 
+    + getSectionsByTag(tag: String): List<Section> 
+    + getSectionByTitle(sectionTitle: String): Section 
+    + markSectionAsComplete(sectionTitle: String): void 
+    + markSectionAsIncomplete(sectionTitle: String): void 
+    + addSubsection(parent: Object, newSubsection: Subsection): void 
+    + getSubsectionByTitle(title: String): Subsection 
+    + filterSections(query: String): List<Section> 
+}
+
+
+
+
+
+class Section {
+ - id: String                          
+ - priority: String                    
+ - title: String                       
+ - isCompleted: boolean                
+ - tag: List<String>                   
+ - subsections: List<Subsection>       
+ - indentationLevel: int               
+ - targetDate: Date                    
+
+ + getId(): String                    
+ + setId(id: String): void             
+ + getPriority(): String               
+ + setPriority(priority: String): void 
+ + getTitle(): String                  
+ + setTitle(title: String): void      
+ + getTag(): List<String>              
+ + setTag(tag: List<String>): void     
+ + getIsCompleted(): boolean           
+ + setIsCompleted(isCompleted: boolean): void
+ + addTag(tag: String): void           
+ + removeTag(tag: String): void        
+ + editTag(oldTag: String, newTag: String): void
+ + clearTags(): void                   
+ + markSectionAsCompleted(): void      
+ + getSubsections(): List<Subsection>  
+ + setSubsections(subsections: List<Subsection>): void
+ + setTargetDate(targetDate: Date): void
+ + getTargetDate(): Date               
+ + isCompleted(): boolean              
+ + setCompleted(completed: boolean): void
+ + Section(title: String)              
+ + editSubsection(subsectionTitle: String, newTitle: String): void
+ + removeSubsection(subsection: Subsection): void
+ + getSubsectionByTitle(title: String): Subsection
+ + addSubsection(title: String): void  
+ + addSubsection(subsection: Subsection): void
+}
+
+class Subsection {
+  - title: String                                 
+ - subsections: List<Subsection>                 
+ - parentSubsection: Subsection                  
+ - parentSection: Section                        
+ - indentationLevel: int                          
+
+ + getTitle(): String                            
+ + setTitle(title: String): void                 
+ + getSubsections(): List<Subsection>             
+ + getParentSubsection(): Subsection             
+ + setParentSubsection(parentSubsection: Subsection): void
+ + setParentSection(section: Section): void       
+ + getIndentationLevel(): int                     
+ + setIndentationLevel(indentationLevel: int): void 
+ + addSubsection(subsubsection: Subsection): void 
+ + removeSubsection(subsection: Subsection): void 
+ + deleteSubsection(index: int): void             
+ + getSubsectionByTitle(subsectionTitle: String): Subsection
+ + getSubsubsections(): List<Subsection>          
+ + Subsection(title: String)                      
+}
+
