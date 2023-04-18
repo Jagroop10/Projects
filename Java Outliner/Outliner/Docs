@@ -50,10 +50,6 @@ class Outliner {
     + filterSections(query: String): List<Section> 
 }
 
-
-
-
-
 class Section {
  - id: String                          
  - priority: String                    
