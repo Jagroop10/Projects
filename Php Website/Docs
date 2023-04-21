@@ -1,0 +1,21 @@
+# Project Information
+
+- **Main Author:** Jagroop10 
+
+As a developer, I am proud to present my latest project - a recipe website built using PHP and MySQL. This project has been a labor of love for me, as I am passionate about cooking and wanted to create a platform where users can easily access and share their favorite recipes. In this project, I have implemented several features to enhance the user experience, including the ability to add and remove items from the cart, search for recipes based on various keywords, and an admin page that allows the administrator to add and modify recipes on the website.
+
+One of the most important aspects of this project was ensuring the security of the website. To achieve this, I have taken several measures to protect the website against SQL injection attacks. SQL injection is a technique used by hackers to exploit vulnerabilities in a website's code and gain unauthorized access to its database. This can result in the loss of sensitive user data and can be a significant risk to the website's reputation.
+
+To prevent SQL injection attacks, I have implemented several security measures in this project. Firstly, I have used prepared statements to handle user input. Prepared statements are a type of query that separates the SQL code from user input, making it impossible for malicious code to be injected into the query. This method ensures that the user input is treated as data and not as code.
+
+Secondly, I have implemented input validation to ensure that only valid data is entered into the database. This helps to prevent malicious input from being injected into the database. Input validation is the process of checking user input for errors, such as incorrect format or invalid characters. If errors are found, the user is notified and asked to correct them before the data is submitted to the database.
+
+Finally, I have restricted user privileges to ensure that only authorized users have access to the website's database. This helps to prevent unauthorized access to the website's sensitive data. User privileges are a set of permissions that determine what actions a user can perform on a database. By restricting user privileges, I have ensured that only authorized users can make changes to the database.
+
+Now, let's talk about the features of this project. One of the main features of this recipe website is the ability to add and remove items from the cart. This feature allows users to save their favorite recipes to the cart, which they can then refer to later when they are ready to cook. This feature is particularly useful for users who like to plan their meals in advance.
+
+Another feature of this website is the ability to search for recipes based on various keywords. This feature allows users to search for recipes based on ingredients, cuisine, and other criteria. The search function is powered by a MySQL database, which makes it fast and efficient. Users can also filter their search results based on the number of ingredients, preparation time, and other factors.
+
+Finally, I have created an admin page that allows the administrator to add and modify recipes on the website. This feature is useful for website owners who want to keep their content up-to-date and relevant. The admin page is password-protected, ensuring that only authorized users can access it. From the admin page, the administrator can add new recipes, edit existing ones, and delete outdated recipes.
+
+In conclusion, this recipe website project has been an exciting challenge for me, and I am proud of the features and security measures I have implemented. With its user-friendly interface, powerful search function, and admin page, this website is sure to be a hit with cooking enthusiasts everywhere. I am excited to see how this project evolves in the future and how it can be further improved to meet the needs of its users.
