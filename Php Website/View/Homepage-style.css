@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.returnhome {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.carttitle {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+}
+
+.nav_links li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav_links li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #077b46;
+}
+
+.nav_links li button {
+  display: inline-block;
+  margin-left: -93px;
+  position: absolute;
+  top: 0px;
+  right: -107px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #077b46;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #077b46;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.view-more {
+  background-color: #ddd;
+  color: #333;
+}
+
+.view-more:hover {
+  background-color: #077b46;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 400px;
+  max-width: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 24%;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  height: 370px;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+}
+
+.card-image img {
+  height: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+  min-height: 40px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-price {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card-time,
+.card-restrictions {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+input[name="searchrecipename"],
+input[name="searchprice"],
+input[name="searchcookingtime"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  padding: 5px 15px;
+  background-color: #077b46;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 7px;
+  margin-right: 15px;
+}
+
+.nav_links li {
+  position: relative;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: #077b46;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a.button:hover {
+  background-color: #077b46;
+}
+
+/*Media queries*/
+
+@media only screen and (min-width: 1210px) {
+  .toggle {
+    display: none;
+  }
+
+  
+}
+
+@media screen and (max-width: 1209px) and (min-width: 1200px) {
+  .toggle {
+    display: none;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 420px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: 400px;
+    max-width: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-content {
+    padding: 543px;
+    min-height: 40px;
+  }
+
+  .card-image {
+    height: 370px;
+    overflow: hidden;
+    margin-left: 504px;
+    margin-right: 5%;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 420px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+  }
+
+  .card-container {
+    padding-top: 35px;
+  }
+
+  .toggle {
+    position: relative;
+    height: 26px;
+    cursor: pointer;
+    margin-left: 105px;
+    z-index: 11;
+  }
+
+  .toggle.active img {
+    content: url("../View/Images/close.png");
+  }
+
+  nav.dropdown.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 50%);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 345px;
+    z-index: 10;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  nav.dropdown.active form,
+  nav.dropdown.active .nav_buttons,
+  nav.dropdown.active a[href="../Controller/login_controller.php"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  nav.dropdown.active form label,
+  nav.dropdown.active form select,
+  nav.dropdown.active form input[type="text"],
+  nav.dropdown.active form input[type="submit"] {
+    margin: 5px;
+    font-size: 1.2rem;
+  }
+
+  nav.dropdown.active form input[type="submit"] {
+    background-color: #077b46;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  nav.dropdown.active .nav_buttons {
+    margin-top: 20px;
+  }
+
+  nav.dropdown.active .nav_buttons a {
+    margin: 5px;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  nav.dropdown.active .nav_buttons span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  nav.dropdown.active a[href="../Controller/login_controller.php"] {
+    margin-top: 20px;
+  }
+
+  form#searchForm,
+  .nav_buttons {
+    margin-top: 20px;
+  }
+
+  input[type="submit"] {
+    padding: 5px 15px;
+    background-color: #077b46;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 7px;
+    margin-right: 15px;
+  }
+
+  
+
+
+
+
+
+
+
+
+}
