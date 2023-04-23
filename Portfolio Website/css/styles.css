@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    font-family: "Neue Montreal";
+}
+
+.home {
+    overflow: hidden;
+}
+
+
+nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.menu__logo,
+.menu__items-link {
+    padding: 40px;
+}
+
+.menu__logo a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__items {
+    display: flex;
+}
+
+.menu__items-link a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu__items-link.active a {
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.container__item {
+    position: relative;
+    width: 540px;
+    height: 360px;
+    margin: 50px 500px 20px 80px;
+}
+
+
+
+.container__item-header h1 {
+    position: relative;
+    top: -74px;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 360px;
+    font-size: 100px !important;
+    white-space: nowrap;
+}
+
+.skills {
+    position: relative;
+    top: -74px;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 360px;
+    font-size: 100px !important;
+    white-space: nowrap;
+}
+
+.skills h1 {
+    position: absolute;
+    left: -58px;
+    bottom: 200px;
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-weight: lighter;
+    font-size: 90px;
+}
+
+.skills-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.skills-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-icons i {
+    font-size: 40px;
+    margin: 0 20px;
+    color: #555;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 90px;
+    margin-top: -181px;
+}
+
+.icon-container i {
+    color: #ffffff;
+}
+
+
+.container__item h1 {
+    position: absolute;
+    left: -140px;
+    bottom: -40px;
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-weight: lighter;
+    font-size: 64px;
+}
+
+.container__item-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container__item-1 {
+    background: url(../images/portfolio_website.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-2 {
+    background: url(..//images/outliner_application.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-3 {
+    background: url(..//images/food_website.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+@media(max-width: 900px) {
+    .container__item {
+        width: 300px;
+        height: 200px;
+        margin: 50px 100px 20px 80px;
+    }
+
+    .container__item-header h1 {
+        font-size: 30px !important;
+        left: -50%;
+    }
+
+    .container__item h1 {
+        font-size: 40px;
+        bottom: -20px;
+    }
+
+
+}
+
+
+#js-scroll {
+    height: 200%;
+}
+
+
+
+.about__container {
+    width: 50%;
+    margin: 180px 0 100px 100px;
+    padding: 40px;
+
+}
+
+.aboutproject__container {
+    width: 85%;
+    margin: 180px 0 100px 100px;
+    padding: 40px;
+
+}
+
+.about__container p {
+    margin: 60px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.aboutproject__container p {
+    margin: 60px 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.about__container p span {
+    font-family: "GrandSlang Roman";
+}
+
+.about__container-contact-link a {
+    color: #fff;
+}
+
+p.about__container-link {
+    font-size: 26px;
+}
+
+.about__container-link a {
+    color: #fff;
+    font-size: 26px;
+}
+
+
+.textemail {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: "GrandSlang Roman";
+    position: relative;
+
+}
+
+.textemail::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background: #000;
+    width: 100%;
+    animation: typing 3s alternate infinite,
+        line 1s infinite;
+}
+
+@keyframes typing {
+    to {
+        width: 0%;
+    }
+}
+
+@keyframes line {
+    50% {
+        color: transparent;
+    }
+}
+
+@media(max-width: 900px) {
+    .about__container {
+        width: 70%;
+        margin: 140px 0 60px 40px;
+    }
+
+    .cursor-follow {
+        display: none;
+    }
+}
+
+
+.project__container {
+    width: 70%;
+    margin: 100px auto;
+    color: #fff;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.project__container_2 {
+    width: 70%;
+    margin: 100px auto;
+
+    color: #fff;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+
+.project__container-title h1 {
+    color: #fff;
+    font-family: "Neue Montreal";
+    font-weight: lighter;
+    font-size: 140px;
+    padding-top: 312px;
+}
+
+.project__container-subtitle {
+    margin: 20px 0;
+    font-family: "Neue Montreal";
+    font-size: 16px;
+}
+
+.project__container-images {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0;
+}
+
+.project__container-images_2 {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0;
+}
+
+.project__image {
+    background: rgb(0, 0, 0);
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.project__image-five {
+    background: url(../images/portfolio_website.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-two {
+    position: relative;
+    top: -100px;
+    left: -260px;
+
+}
+
+.project__image-six {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(..//images/p6.JPG) no-repeat 50% 50%;
+    background-size: cover;
+
+}
+
+.project__image-three {
+    position: relative;
+    left: 0px;
+    background: url(..//images/food_website.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-two {
+    position: relative;
+    left: 300px;
+    background: url(..//images/outliner_application.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-one {
+    position: relative;
+    left: -260px;
+    top: -100px;
+    background: url(..//images/portfolio_website.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-seven {
+    position: relative;
+    left: 300px;
+    background: url(../images/p7.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-four {
+    position: relative;
+    top: 63px;
+    left: -282px;
+    background: url(../images/todo.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-eight {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(..//images/p8.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project-next-link {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-back-link {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-next-link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "GrandSlang Roman";
+    font-size: 160px;
+}
+
+.project-back-link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "GrandSlang Roman";
+    font-size: 160px;
+}
+
+
+
+.anime-js-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+@media(max-width: 900px) {
+    .project__container-title h1 {
+        font-size: 40px;
+    }
+
+    .project__container_2 {
+        width: 80%;
+    }
+
+    .project__container-images_2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .project__image {
+        width: 90%;
+    }
+
+    .project__image-five,
+    .project__image-six,
+    .project__image-seven,
+    .project__image-eight {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+
+    .image__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+
+
+
+}
