@@ -1,0 +1,15 @@
+# Project Information
+
+- **Main Author:** Jagroop10 
+
+I am excited to present my latest project - a to-do list application built using HTML, CSS, and JavaScript. This application is inspired by the popular MinimaList app and is designed to help users keep track of their tasks and increase productivity.
+
+One of the key features of this application is its user-friendly interface. The design is simple and minimalist, allowing users to focus on their tasks without any distractions. The application consists of a list of tasks with the option to add, mark as complete, and delete tasks.
+
+To add a task, users simply need to type the task name into the input field and press 'Enter' on the keyboard. The task will be added to the list in real-time. To mark a task as complete, users can click the checkbox next to the task name. The completed task will be crossed out, indicating that it has been completed. To delete a task, users can click the "X" button next to the task name. The task will be removed from the list.
+
+One of the challenges of building this application was ensuring that it was responsive and worked seamlessly across different devices. To achieve this, I used HTML and CSS to create a responsive design that adjusts to different screen sizes. I also used JavaScript to implement the functionality of the application, ensuring that it works smoothly and efficiently.
+
+I am proud to say that security was also a priority during the development of this application. Although this application doesn't require a login or store sensitive user data, I implemented security measures to protect against potential attacks. For example, I ensured that user input is properly sanitized to prevent any malicious code from being executed.
+
+Overall, I am pleased with the results of this project. I believe that this to-do list application will be useful for anyone who wants to stay organized and improve their productivity. In the future, I plan to add additional features to the application, such as the ability to prioritize tasks and set reminders. I am excited to see how this project will evolve and how it can be further improved to meet the needs of its users.
